@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+int n,s=0,t=0;
+cin>>n;
+while(n--)
+{
+    int a,b;
+    cin>>a>>b;
+    if(a>b)
+    s++;
+    else if(b>a)
+    t++;
+   
+}
+if(s>t)
+cout<<"Mishka"<<endl;
+else if(s<t)
+cout<<"Chris"<<endl;
+else
+cout<<"Friendship is magic!^^"<<endl;
+}
