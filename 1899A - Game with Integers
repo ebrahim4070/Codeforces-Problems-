@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;cin>>n;
+       int s=n+10;
+       int r=abs(n-10);
+       if(s%3==0)
+      { cout<<"First"<<endl;
+      }
+      else if(r%3==0)
+      {
+          cout<<"First"<<endl;
+         
+      }
+      else
+      {
+      cout<<"Second"<<endl;
+      }
+     
+    }
+    return 0;
+}
