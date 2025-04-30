@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        string s;
+        cin >> n >> s;
+
+      int cnt=0,cnt1=0;
+      for(int i=0;i<s.size();i++)
+      {
+           if (s[i]=='#')
+          cnt=0;
+          if(s[i]=='.')
+          {
+              cnt++,cnt1++;
+          }
+             if (cnt==3)
+          break;
+         
+          
+      }
+      if(cnt==3)
+      cout<<2<<endl;
+      else
+      cout<<cnt1<<endl;
+     
+    }
+    return 0;
+}
