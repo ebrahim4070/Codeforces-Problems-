@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b;
+        int flag=0;
+        string p,s;
+        cin>>a>>b>>p>>s;
+        int cnt=0;
+        for(int i=0;i<10;i++)
+
+        {
+size_t index=p.find(s);
+if (index != string::npos)
+{
+    cout<<cnt<<endl;
+    flag=1;
+    break;
+}
+p+=p;
+cnt++;
+        }
+        if(flag==0)
+        cout<<-1<<endl;
+    }
+}
